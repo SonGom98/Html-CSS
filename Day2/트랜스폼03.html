@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트래스폼:translate</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            width: 800px;
+            height: 250px;
+            margin: 20px auto;
+        }
+        .box{
+            border: solid 1px black;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin:20px;
+        }
+        /*오른쪽으로 40도 각도로 회전*/
+        #rotatel:hover{
+            transform: rotate(40deg);
+        }
+        /*왼쪽으로 45도 각도로 회전*/
+        #rotatel2:hover{
+            transform: rotate(-45deg);
+        }
+        /*오른쪽으로 90도 각도로 회전*/
+        #rotatel3:hover{
+            transform: rotate(90deg);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="rotatel">
+           <img src="../images/최고.gif" alt="">
+        </div>
+        <div class="box" id="rotatel2">
+            <img src="../images/최고.gif" alt="">
+        </div>
+        <div class="box"  id="rotatel3">
+            <img src="../images/최고.gif" alt="">
+        </div>
+    </div>
+</body>
+</html>

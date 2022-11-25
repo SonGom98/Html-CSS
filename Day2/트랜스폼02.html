@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트래스폼:translate</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            width: 800px;
+            height: 250px;
+            margin: 20px auto;
+        }
+        .box{
+            border: solid 1px black;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+        }
+        .box div{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+        }
+        /*x(가로)축 으로 2배 확대*/
+        .scalex:hover{
+            transform: scaleX(2);
+        }
+          /*y(세로)축 으로 1.5배 확대*/
+        .scaley:hover{
+            transform: scaleY(1.5);
+        }
+          /*x,y로  0.7배 축소*/
+        .scale:hover{
+            transform: scale(0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="scalex"></div>
+        </div>
+        <div class="box">
+            <div class="scaley"></div>
+        </div>
+        <div class="box">
+            <div class="scale"></div>
+        </div>
+    </div>
+</body>
+</html>

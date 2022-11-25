@@ -1,0 +1,29 @@
+ul li{
+    margin: 15px;
+}
+.new::after{
+    content:"NEW!";
+    color: white;
+
+    background-color: red;
+    font-size: 2px;
+    padding: 2px 4px;
+    margin: 0 10px;
+    border-radius: 2px;
+}
+.폭주::before{
+    content: "주문폭주!!";
+    background-color: rgb(206, 154, 255);
+    margin: 0px 10px;
+    font-size: 2px;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+.품절::after{
+    content: "품절!!";
+    background-color: rgb(85, 255, 176);
+    margin: 0px 10px;
+    font-size: 2px;
+    padding: 2px 4px;
+    border-radius: 2px;
+}

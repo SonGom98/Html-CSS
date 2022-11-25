@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트래스폼:translate</title>
+    <style>
+  section{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 50px;
+
+   perspective: 600px; 
+}
+    article{
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        opacity: 0.3;
+    
+    }
+    
+    section:nth-of-type(1) article{
+        transform: skew(20deg);
+    }
+    section:nth-of-type(2) article{
+        transform: skew(45deg);
+    }
+    section:nth-of-type(3) article{
+        transform: skew(-25deg, -15deg);
+        /*x축 -25도, y축 -15도로 비틀기*/
+    }
+    section:nth-of-type(4) article:hover{
+        transform: skew(25deg, 15deg);
+    }
+    
+
+
+        </style>
+</head>
+<body>
+    
+  <section>
+    <article></article>
+  </section>
+  <section>
+    <article></article>
+  </section>
+  <section>
+    <article></article>
+  </section>
+  <section>
+    <article></article>
+  </section>
+  <section>
+    <article></article>
+  </section>
+   
+</body>
+</html>
