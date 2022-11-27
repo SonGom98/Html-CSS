@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /*기본*/
+        background-color: orange;
+      }
+      @media screen and (max-width: 931px) {
+        /*931이하일 때 아래내용 적용*/
+        body {
+          background-color: lightblue;
+        }
+        section {
+          flex-direction: column;
+        }
+        footer {
+            display: none;
+        }
+      }
+      @media screen and (max-width: 320px) {
+        /*320이하(모바일)일 떄 아래내용 적용*/
+        body {
+          background-color: green;
+        }
+        /*
+                display:block;  화면에 보이게
+                display:none; 화면에 보이지 않게
+            */
+            footer {
+            display: block;
+        }
+      }
+      section {
+        display: flex;
+      }
+      .box1 {
+        display: flex;
+        width: 460px;
+      }
+      .box2 {
+        display: flex;
+        width: 460px;
+      }
+   
+    </style>
+  </head>
+  <body>
+    <header style="width: 200px">HF 한국주택금용공사</header>
+    <section>
+      <div class="box1">
+        <div style="width: 260px">
+          금리 고정 행복 고정 <br />
+          안심전환대출 <br />
+          변동금리의 불안과 높은 이자부담을 <br />
+          안심으로 전환해 드립니다
+          <br /><br />
+          <a href="#"> <u>바로가기</u></a>
+        </div>
+        <div>
+          <img src="../images/빌라 창문.jpg" width="200" alt="" />
+        </div>
+      </div>
+      <div class="box2">
+        <div style="width: 260px">
+          금리 고정 행복 고정 <br />
+          안심전환대출 <br />
+          변동금리의 불안과 높은 이자부담을 <br />
+          안심으로 전환해 드립니다
+          <br /><br />
+          <a href="#"> <u>바로가기</u></a>
+        </div>
+        <div>
+          <img src="../images/빌라 창문.jpg" width="200" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer>
+        전화번호 00-000-0000 고객센터 문의하기
+        
+    </footer>
+  </body>
+</html>

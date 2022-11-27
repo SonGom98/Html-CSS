@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+           
+            display: flex; /*부모요소에서 입력한다*/
+            /*플렉스를 이용:블록요소를 인라인 요소로 변경*/
+           /* justify-content: space-evenly; 
+           space-between;
+           flex-end : 전체가 오른쪽 창 끝으로
+           flex-between : 적당한 공백있으면서 정렬   
+           flex-around : between이 양쪽 끝에 공백
+           
+           */
+          /*  flex-direction: column; 세로정렬*/
+          justify-content: center; /*높이값 있는 상태에서*/
+          /*height: 100vh;*/
+          width: 100%;
+          border: 7px solid red;
+          flex-wrap:wrap;/*창을 줄여보기*/
+            /*flex-direction: row; 기본값*/
+           /* align-items: flex-end; 교차축*/
+            /*order : 1 내용을 변경하지않고 출력 순서만 바꿀때 사용*/
+            /*align*/
+        }
+        div{
+            border: 1px solid black;
+           
+        }
+        .box1{
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+        .box2{
+            background-color: rgb(160, 1, 27);
+            width: 100px;
+            height: 100px;
+        }
+        .box3{
+            background-color: rgb(54, 0, 9);
+            width: 100px;
+            height: 100px;
+        }
+        .box4{
+            background-color: rgb(255, 10, 133);
+            width: 100px;
+            height: 100px;
+        }
+        .box5{
+            background-color: rgb(73, 0, 73);
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box1" >box1</div>
+        <div class="box2" >box2</div>
+        <div class="box3" >box3</div>
+        <div class="box4" >box4</div>
+        <div class="box5" >box5</div>
+
+    </section>
+</body>
+</html>
