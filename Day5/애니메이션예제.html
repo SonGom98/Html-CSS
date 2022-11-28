@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../images/행성이미지.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div{
+            border: solid 1px white;
+          
+        }
+        div p{
+            color: white;
+            font-size: 70px;
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            animation: moveIn 1s ease-in-out;
+        }
+        div span{
+            font-size: 30px;
+            color: aliceblue;
+            position: absolute;
+            top: 52%;
+            right: 5%;
+            animation: moveIn 2s ease-out;
+        }
+        @keyframes moveIn{
+            from{
+                right:-10%;
+                opacity: 0;
+            }
+            to{
+                right: 5%; 
+                opacity: 1;
+            }
+        }
+        div pre{
+            color: aliceblue;
+            position: absolute;
+         top: 5%;
+         left: 5%;
+         animation: moveIn2 1s ease-in-out;
+        }
+        @keyframes moveIn2{
+            from{
+                left:-10%;
+                opacity: 0;
+            }
+            to{
+                left: 5%;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span> pour un logiciel CRM,</span>
+        <p>simple,Icomplet
+<br>
+et intuitif
+
+        </p>
+        <pre>
+            CRM 소프트웨어를 선택하고,
+            간단하고 완전하며
+            직관적인    
+
+        </pre>
+    </div>
+</body>
+</html>
