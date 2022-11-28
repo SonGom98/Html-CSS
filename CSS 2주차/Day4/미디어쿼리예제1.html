@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big1{
+            width: 100%;
+            background-color: gray;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        a{
+            text-decoration: none;
+            margin-left: 50px;
+        }
+        a:visited{
+            color: black;
+        }
+        a:hover{
+            color: yellow;
+           
+        }
+        .small1{
+            display: flex;
+            align-items: center;
+        }
+        @media screen and (max-width: 666px) {
+            .small1{
+                flex-direction: column;
+            }
+        }
+        .fa-solid:hover{
+            color: yellow;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+</head>
+<body>
+    <div class="big1">
+       
+            <article>
+                <img src="../images/dog1.jpg" width="200" height="100" alt="">
+            </article>
+        
+            <article class="small1">
+              <a href="#"> Home</a> 
+              <a href="#"> Service</a> 
+              <a href="#"> Pages</a>  
+              <a href="#"> Blog</a>  
+              <a href="#"> Contact</a> 
+            </article>
+            <article style="margin: auto 0px;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </article>
+
+    </div>
+</body>
+</html>
