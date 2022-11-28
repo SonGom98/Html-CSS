@@ -1,7 +1,0 @@
-translate X,Y,Z 축으로 이동
-scale 크기 조절
-rotate 회전
-skew 뒤틀기
-원근감은 3d에서
-
-호버시 0.5초    transition: all 0.5s;
