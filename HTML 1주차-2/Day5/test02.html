@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            width: 200px;
+            height: 120px;
+            margin: 20px;
+          
+        }
+        .box1{
+           border-width: 2px; /*네 방향 모두 2px*/
+           border-style: solid; /*테둘 스타일 -실선*/
+        }
+        .box2{
+            border-width: thick thin; /*위아래 두껍게, 좌우가 가늘게*/
+            border-top-color: red;
+            border-bottom-color:orange ;
+            border-left-color:green ;
+            border-right-color: blue ;
+            border-top-style: solid;
+            border-bottom-style: dashed;
+            border-left-style: dotted;
+            border-right-style:groove;    
+        }
+        .box3{
+            border-width:thick thick thin ;  /*위 두껍게, 좌우 두껍게, 아래 가볍게*/
+            border-top-color: red;
+            border-style: solid; /*테둘 스타일 -실선*/
+        }
+        .box4{
+           border-width: 10px 6px 7px 2px; /*위부터 시계방향*/
+           border-top-color: red;
+           border-style: solid; /*테둘 스타일 -실선*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">박1</div>
+    <div class="box2">박2</div>
+    <div class="box3">박3</div>
+    <div class="box4">박4</div>
+    
+</body>
+</html>

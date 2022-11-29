@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /*박스모델너비에 테두리 포함*/
+        }
+        div{
+            width: 1200px;
+        }
+        header{
+            width: 100%;
+            height: 130px;
+           text-align: center;
+        }
+    
+        section{
+            float: left;
+            width: 500px;
+            height: 700px;
+          
+        }
+        article{
+            float: left;
+            width: 300px;
+            height: 700px;
+           
+        }
+        footer{
+            text-align: center;
+            clear: left; /*clear:both 양쪽해제*/
+            width: 100%;
+            height: 80px;
+           
+        }
+     
+        .login{
+            float: left;
+            width: 400px;
+            height: 700px;
+        }
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap");
+
+      body {
+       
+        font-family: "Noto Sans KR", sans-serif;
+      }
+    </style>
+    </style>
+</head>
+<body>
+    <div>
+    <header>
+       <img src="images/네이버 검색창.jpeg" width="700" height="130" alt="">
+    </header>
+    <div >
+        <img src="images/네이버 잡다 모음.PNG"    alt="">
+    </div>
+   
+    <section>
+        <img src="images/네이버 메인.PNG" width="500" height="700" alt="">
+    </section>
+   
+    <article>
+        <div>
+            <a href="http://naver.com"><img src="images/logo_naver.png" width="300" alt=""></a>
+           </div >
+           <div class="가입">
+             <label for="user-id"> 아이디:</label><br />
+             <input
+               type="text"
+               id="user-id"
+               name="user-id"
+               placeholder="아이디를 입력하세요"
+             />
+             @ naver.com
+             <br />
+             <label for="user-pw"> 비밀번호: </label><br />
+             <input
+               type="password"
+               id="user-pw"
+               name="user-pw"
+               placeholder="비밀번호를 입력하세요"
+             />
+             <br />
+             <label for="user-pw2"> 비밀번호 재확인: </label><br />
+             <input
+               type="password"
+               id="user-pw2"
+               name="user-pw2"
+               placeholder="비밀번호를 입력하세요"
+             />
+             <br /><br />
+             <label for="user-id"> 이름:</label><br />
+             <input
+               type="text"
+               id="user-id"
+               name="user-id"
+               placeholder="아이디를 입력하세요"
+             />
+             <br />
+             <label for="birth">생년월일 : </label> <br />
+             <input type="date" name="" id="birth" />
+             <br />
+             성별 <br>
+             <label for="male">남성</label>
+             <input type="radio" name="gender" id="male" value="s_1" />
+             <label for="female">여성</label>
+             <input type="radio" name="gender" id="female" value="s_2" />
+             <label for="none">선택 안함</label>
+             <input type="radio" name="gender" id="none" checked value="s_3" />
+             <br />
+             본인 확인 이메일 선택
+             <br />
+       
+             <input
+               type="text"
+               id="user-id"
+               name="user-id"
+               placeholder="이메일을 입력하세요"
+             />@
+             <select name="" id="path">
+               <option value="">naver.com</option>
+               <option value="">googlo.com</option>
+               <option value="">daum.net</option>
+               <option value="">abc.com</option>
+               <option value="">anrnag.com</option>
+             </select>
+             <br />
+       
+             휴대전화  <select name="" id="path">
+               <option value="">대한민국 +82</option>
+               <option value="">영국 +44</option>
+               <option value="">독일 +49</option>
+               <option value="">일본 +81</option>
+               <option value="">중국 +86</option>
+             </select>
+             <br>
+             <input
+               type="phone"
+               placeholder="010-0000-0000"
+               size="13"
+               maxlength="13"
+               autocomplete="off"
+             /> <input type="button" value="인증번호 받기" > <br> 
+             <input
+               type="text"
+               placeholder="인증번호를 입력하세요"
+               size="17"
+               maxlength="13"
+               autocomplete="off"
+             />
+             <br>
+             <input type="button" value="가입하기" id="">
+             <br />
+             <h4>이용약관 개인정보처리방침 책임의 한계 <br> 와 법적고지  <br> 
+                회원정보 고객센터 <br>
+                NAVER.Corp</h4>
+           </div>
+    </article>
+
+    <div class="login">
+        <img src="images/네이버 로그인하는곳.PNG"width="500" height="700" alt="">
+            </div>
+
+        <footer>
+           <img src="images/네이버 푸터.PNG" width="105%" alt="">
+        </footer>
+   
+</div>
+</body>
+</html>
