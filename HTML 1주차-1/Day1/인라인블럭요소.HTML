@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인라인 블록 요소</title>
+
+    <style>
+        span{
+            background-color: gray;
+            color: blue;
+        }
+/*
+        ul{
+            border: solid 1px gray;
+            width: 100;
+        }
+        */
+        li{
+            background-color: orange;
+            padding: 20px 10px; /*위아래, 좌우 패딩*/
+            border: solid 1px black;
+           width: 100px;
+        }
+        h3{
+            color: red;
+        }
+
+        h5{
+            background-color: gray;
+            color: yellow;
+        }
+        h1{
+            color: rgb(red, green, blue);
+        }
+        h2{
+            color: rgba(red, green, blue, alpha);
+        }
+
+        kdb{
+            background-color: gray;
+            color: blue ;
+            font-size: 10px;
+        }
+        strong{
+            background-color: gray;
+            color: green;
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <!--태그 인라인 요소-->
+    <p>
+      다양한 종류의 <kdb>디지털 환경</kdb> 이해하고 제공하고자하는 서비스,
+      <i>콘텐츠의</i> 기획과 분석을 바탕으로 <strong>인터페이스(UI)</strong>는
+      물론 사용자경험(UX)까지 고려한 <span>모바일 앱&웹 디자인</span>
+    </p>
+
+    <p>
+      <img src="images/놀람.gif" alt="" />
+      실무 중심의 수업으로 전문적인 <u>포트폴리오</u>를 만들어 봅니다.
+    </p>
+
+    <a href="http://www.naver.com">link</a> <!--줄 바꿈이 안 생긴다-->
+    <!--이모티콘 윈도우키 + 마침표--> 😊😊😊🤣
+
+    <!--태그 블록 요소-->
+    <hr>
+    <hr>
+
+
+
+    <ul>
+      <li style="color: red;">메인메뉴1</li>
+      <li>메인메뉴2</li>
+      <li>메인메뉴3</li>
+      <li>메인메뉴4</li>
+    </ul>
+
+    <h1>블록요소</h1>
+    <h2>블록요소</h2>
+    <h3>블록요소</h3>
+    <h4>블록요소</h4>
+    <h5>블록요소</h5>
+    <h6>블록요소</h6>
+  </body>
+</html>

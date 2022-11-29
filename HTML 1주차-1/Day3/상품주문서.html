@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상품 주문서</title>
+    <style>
+        form{
+            width: 400px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1 style="color: purple; font-weight: bold">상품 주문서</h1>
+    <form action="" method="post">
+      <fieldset>
+        <legend style="color: purple; font-weight: bold">개인 정보</legend>
+        <ul>
+          <li>
+            <label for="user-id" style="font-weight: bold">이름:</label>
+            <input
+              type="text"
+              id="user-id"
+              name="user-id"
+              placeholder="여백없이 입력"
+            />
+          </li>
+          <br />
+          <li>
+            <label for="user-pw" style="font-weight: bold"> 연락처: </label>
+            <input
+              type="password"
+              id="user-pw"
+              name="user-pw"
+              placeholder="연락가능한 번호"
+            />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend style="color: purple; font-weight: bold">배송지 정보</legend>
+        <ul>
+          <li>
+            <label for="email" style="font-weight: bold">주소</label>
+            <input type="email" placeholder="" size="20" />
+          </li>
+          <br />
+          <li>
+            <label for="tel" style="font-weight: bold">전화번호 : </label>
+            <input
+              type="tel"
+              placeholder=""
+              size="21"
+              maxlength="20"
+              autocomplete="off"
+            />
+          </li>
+          <br /><br />
+          <li>
+            <label for="memo" style="font-weight: bold">메모 : </label>
+            <textarea name="" id="memo" cols="30" rows="5"></textarea>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend style="color: purple; font-weight: bold">주문 정보</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="" id="sports1" />
+            <label for="sports1">과테말라 연태구이 (100g)</label>
+
+            <input type="number" id="num1" min="0" max="30" value="10" />
+            <label for="num1">개</label>
+          </li>
+          <br />
+          <li>
+            <input type="checkbox" name="" id="sports2" />
+            <label for="sports2">인도네시아 만델링 (100g)</label>
+            <input type="number" id="num2" min="0" max="30" value="10" />
+            <label for="num2">개</label>
+          </li>
+          <br />
+          <li>
+            <input type="checkbox" name="" id="sports3" />
+            <label for="sports3">탐라는도다(블렌딩) (100g)</label>
+            <input type="number" id="num3" min="0" max="30" value="10" />
+            <label for="num3">개</label>
+          </li>
+        </ul>
+      </fieldset>
+      <br /><br />
+      <button onclick="window.open('form예제.html')">연태구이 관련 정보</button>
+      <button onclick="window.open('form예제.html')">만델링 관련 정보</button>
+      <button onclick="window.open('form예제.html')">블렌딩 관련 정보</button>
+      <br><br>
+      <input type="submit" value="주문하기" class="submitbtn1" />
+      <input type="reset" value="다시작성" class="resetBtn1" />
+    </form>
+  </body>
+</html>

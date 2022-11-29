@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table{
+        width: 100%; /*500px*/
+        border-collapse: collapse; /*표 테두리를 한줄로*/
+        text-align: center; /*가운데 정렬*/
+    }
+    thead{
+        text-align: center;
+    background-color: aqua;
+    }
+
+    tbody{
+        text-align: center;
+        background-color:beige;
+    }   
+
+    th, td{
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+    
+</style>
+
+</head>
+<body>
+    <table border="">
+        <caption>색깔의 종류</caption> <!--표의 제목-->
+        <thead>
+        <tr>
+            <th>종류</th>   <th>비비드</th> <th>파스텔</th> <th>어두운 계열</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>  <td>빨강</td>   <td>분홍색</td> <td>검정</td>
+        </tr>
+    
+        <tr>
+            <td>2</td>  <td>파랑</td>   <td>하늘색</td> <td>남색</td>
+        </tr>
+        <tr>
+            <td>3</td>  <td>노랑</td>   <td>연보락색</td>   <td>회색</td>      
+          </tr>  
+        </tbody>
+        
+        <tfoot>
+        <tr>
+            <td>합계</td>  <td>3개</td>   <td>3개</td>   <td>3개</td>      
+          </tr>  
+        </tfoot>
+    </table>
+
+
+
+
+    <table border="">
+        <caption>색깔의 종류</caption> <!--표의 제목-->
+        <thead>
+        <tr>
+            <th>종류</th>   <th colspan="2" style="background-color: yellowgreen;">밝은 계열</th> <th>어두운 계열</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>  <td>빨강</td>   <td>분홍색</td> <td>검정</td>
+        </tr>
+    
+        <tr>
+            <td>2</td>  <td>파랑</td>   <td rowspan="2" style="background-color: lightblue ;">하늘색</td> <td>남색</td>
+        </tr>
+        <tr>
+            <td>3</td>  <td>노랑</td>      <td>회색</td>      
+          </tr>  
+        </tbody>
+    </table>
+<br><br>
+
+
+    
+    <table border= "">
+        <caption>
+            상품구성 <br>
+            실속형과 고급형 상품 구성</caption> <!--표의 제목-->
+        <thead>
+        <tr>
+            <th>용도</th>   <th>중량</th> <th>개수</th><th>가격</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td rowspan="2">실속형</td>  <td>3kg</td>   <td>11~16과</td> <td>17000원</td>
+        </tr>
+        <tr>
+              <td>5kg</td>   <td>16~25과</td> <td>25000원</td>
+        </tr>
+        <tr>
+            <td rowspan="2">고급형</td>  <td>3kg</td>   <td>11~16과</td> <td>28000원</td>
+        </tr>
+        <tr>
+              <td>5kg</td>   <td>18~25과</td> <td>47000원</td>
+        </tr>
+    
+        
+        </tbody>
+    </table>
+
+
+    <pre style="font-size: 20px ; ">
+                     
+    <table border="">
+
+        <figure>
+<figcaption>
+    <p> Modern Browser 국내에서 자주 사용하는<b> 모던 브라우저</b></p>
+</figcaption>
+
+        </figure>
+
+         <caption>
+            <strong> Modern Browser</strong>
+            국내에서 자주 사용하는 모던 브라우저</caption>
+         <thead>
+            <tr>
+                <th>브라우저</th> <th>제조업체</th> <th>다운로드</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            <tr>
+                <th>크롬(Chrome)</th> <td>Google</td> <td>https://www.google.com/Chrome/</td>
+            </tr>
+
+            <tr>
+                <th>파이어폭스 <br>(Firefox) </th> <td>Mozilla</td> <td>https://www.mozilla.org/ko/firefox/</td>
+            </tr>
+
+            <tr>
+                <th>엣지(Edge)</th> <td>Microsoft</td> <td>https://www.microsoft.com/ko-kr/windows/microsoft-edge</td>
+            </tr>
+         </tbody>
+
+    </table>
+
+
+
+    <table border= "">
+        <caption>
+            제주특별자치도 학교현황(2015.4.1 기준)</caption> <!--표의 제목-->
+        <thead>
+        <tr>
+            <th>구분</th>   <th>학교수</th> <th>학급수</th><th style="background-color: rgb(159, 159, 226);">학생수</th> <th>교원수</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+             <th style="background-color: gold;">유치원</th>  <td>117</td>   <td>252</td> <td>5,547</td> <td>474</td>
+        </tr>
+        <tr>
+             <th style="background-color: goldenrod;">초등학교</th>  <td style="background-color: goldenrod;">111</td>   <td style="background-color: goldenrod;">1,720</td> <td style="background-color: goldenrod;">37,686</td> <td style="background-color: goldenrod;">2,632</td>
+        </tr>
+        <tr>
+             <th style="background-color: gold;">중학교</th>  <td>44</td>   <td>699</td> <td>21,274</td> <td>1,412</td>
+        </tr>
+        <tr>
+             <th style="background-color: goldenrod;">고등학교</th>  <td style="background-color: goldenrod;">29</td>   <td style="background-color: goldenrod;">676</td> <td style="background-color: goldenrod;">22,019</td> <td style="background-color: goldenrod;">1,433</td>
+        </tr>
+        <tr>
+             <th style="background-color: gold;">특수학교</th>  <td>3</td>   <td>90</td> <td>428</td> <td>160</td>
+        </tr>
+        </tbody>
+
+        <tfoot style="background-color: rgb(253, 138, 138);">
+            <th>합계</th> <td>300</td> <td>3,437</td> <td>86,954</td> <td>6,111</td>
+        </tfoot>
+    </table>
+
+
+
+
+</body>
+</html>
