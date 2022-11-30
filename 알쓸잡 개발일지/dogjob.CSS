@@ -1,0 +1,48 @@
+* {
+    text-align: center;
+    margin: auto;
+  }
+  h1{
+    font-size: 60px;
+  }
+
+  table {
+   width: 70%;
+  }
+  .Mtable1 tr td:hover {
+    box-shadow:  5px 5px 5px  rgb(255, 0, 0);
+    transform:translateY(-20px)
+  }
+  .title1 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .title1:hover {
+    color: goldenrod;
+  }
+  .Mtable1 tr td {
+    width: 5%;
+    height: 200px;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 20%;
+    transition: all 0.5s;
+  }
+  .Mtabletd1 {
+    padding-top: 20%;
+    vertical-align: top;
+    text-align: right;
+  }
+ .Mtable1 tr th{
+  height: 150px;
+ 
+ }
+ .main{
+  font-size: 40px;
+  border-radius: 10%;
+  height: 100px;
+  box-shadow:  5px 5px 5px  gray;
+ }
+.firstdiv{
+  margin: auto;
+  width: 100%;
+}
