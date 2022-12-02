@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2 {
+        background-color: yellowgreen;
+      }
+    </style>
+
+    <script>
+      function subway() {
+        let name = "Subway";
+        let city = "홍대역";
+        console.log(name + city);
+        document.getElementById('innerH').innerHTML=(name+" "+city);
+      }
+      function bus() {
+       let name = "Bus";
+       let building = "에이콘 아카데미";
+        document.getElementById('innerH').innerHTML=(name+" "+building);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>innerHTML을 써봅시다</h2>
+    <div id="innerH">버스와 지하철</div>
+    <button onclick="subway()">Subway버튼</button>
+    <button onclick="bus()">Bus버튼</button>
+    <!-- 정석 표현 법 javascript:bus(); -->
+    <button onclick="javascript:bus();">Bus버튼</button>
+  </body>
+</html>

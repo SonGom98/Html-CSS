@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        #red{
+            background-color: red;
+            width: 40px;
+            height: 40px;
+        }
+        #orange{
+            background-color: orange;
+            width: 40px;
+            height: 40px;
+        }
+        #yellow{
+            background-color: yellow;
+            width: 40px;
+            height: 40px;
+        }
+        #green{
+            background-color: green;
+            width: 40px;
+            height: 40px;
+        }
+        #blue{
+            background-color: blue;
+            width: 40px;
+            height: 40px;
+        }
+        #brown{
+            background-color: brown;
+            width: 40px;
+            height: 40px;
+        }
+        #white{
+            background-color: white;
+            width: 40px;
+            height: 40px;
+        }
+        #black{
+            background-color: black;
+            width: 40px;
+            height: 40px;
+        }
+        .pm{
+            border: 1px solid black;
+            width: 30px;
+            height: 30px;
+          
+        }
+        #change{
+            font-size: 150px;
+            
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .color{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="change">0</div>
+        <div class="pmbox">
+        <button class="pm" onclick="changeNump()">+</button>
+        <button class="pm" onclick="changeNumm()">-</button>
+        </div>
+        <div class="color">
+        <button id="red" onclick="click1()"></button>
+        <button id="orange" onclick="click2()"></button>
+        <button id="yellow" onclick="click3()"></button>
+        <button id="green" onclick="click4()"></button>
+        <button id="blue" onclick="click5()"></button>
+        <button id="brown" onclick="click6()"></button>
+        <button id="white" onclick="click7()"></button>
+        <button id="black" onclick="click8()"></button>
+
+        <script>
+            function click1(){
+                document.getElementById("change").style.color = "red";
+            }
+            function click2(){
+                document.getElementById("change").style.color = "orange";
+            }
+            function click3(){
+                document.getElementById("change").style.color = "yellow";
+            }
+            function click4(){
+                document.getElementById("change").style.color = "green";
+            }
+            function click5(){
+                document.getElementById("change").style.color = "blue";
+            }
+            function click6(){
+                document.getElementById("change").style.color = "brown";
+            }
+            function click7(){
+                document.getElementById("change").style.color = "white";
+            }
+            function click8(){
+                document.getElementById("change").style.color = "black";
+            }
+
+            function changeNump(){
+                ++document.getElementById("change").innerHTML;
+            }
+            function changeNumm(){
+                --document.getElementById("change").innerHTML;
+            }
+
+        </script>
+    </div>
+    </div>
+</body>
+</html>

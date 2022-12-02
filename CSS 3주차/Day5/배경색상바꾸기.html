@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>색상의 바뀝니다.</div>
+    <button id="change">배경 색상 바꾸기</button>
+</body>
+    <script>
+       document.querySelector("#change").onclick = changeBack;
+
+        function changeBack(){
+           
+            let arrColor = ["red", "orange", "#fcf", "#cf0", "#39f"];
+            let arrNum = Math.floor(Math.random()*arrColor.length);
+            document.querySelector("div").style.backgroundColor = arrColor[arrNum];
+        }
+
+
+    </script>
+
+</html>

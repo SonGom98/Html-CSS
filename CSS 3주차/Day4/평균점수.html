@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let kor = Number (prompt("국어 점수는?"));
+      let eng = Number (prompt("영어 점수는?"));
+      let mat = Number (prompt("수학 점수는?"));
+      let result = (kor + eng + mat) / 3;
+      result.toFixed(2);
+      document.write(
+        `국어${kor} 영어${eng} 수학${mat}의 평균은 ${result}점 입니다.`
+      );
+    
+    </script>
+  </body>
+</html>

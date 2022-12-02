@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let now = new Date(); //Date객체 : 현재 날짜와 시간을 출력하거나 달력 표시 등
+        
+        //innertext와 innerHtml의 차이
+        function innertext(){
+            document.getElementById('current').innerText = "<em>" + now + "</em>";
+        }
+        function innerhtml(){
+            document.getElementById('current').innerHTML = "<em>" + now + "</em>";
+        }
+
+        function displaySrc(){
+            let car = document.querySelector("#car")
+            alert("이미지 소스 : " + car.getAttribute("src")); //이미지 속성
+
+            let smallPics = document.querySelector(".small")
+            alert("이미지 소스 : " + smallPics.getAttribute("src")); //이미지 속성
+        }
+
+        function changePic(){
+            let car = document.querySelector("#car2")
+            alert("이미지 소스 : " + car.getAttribute("src")); //이미지 속성
+        }
+    </script>
+
+    <button onclick="innertext()">innerText로 표현</button>
+    <button onclick="innerhtml()">innerHTML로 표현</button>
+    <h1>현재 시각 : </h1>
+    <div id="current"></div>
+
+        <!--이미지 속성(위치) 가져오기-->
+    <div id="prod-pic">
+        <img src="../images/자동차1.webp" id="car" width="200" onclick="displaySrc()" alt="">
+    </div>
+
+    <div id="prod-pic">
+        <img src="../images/자동차2.webp" class="small" width="50" onclick="displaySrc()" alt="">
+    </div>
+
+    <div id="prod-pic">
+        <img src="../images/자동차3.jpg" id="car2" width="200" onclick="changePic()" alt="">
+    </div>
+
+</body>
+</html>

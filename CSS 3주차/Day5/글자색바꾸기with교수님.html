@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="change">글자색 바꾸기</button>
+    <p>바꾸기바꾸기바꾸기바꾸기바꾸기바꾸기바꾸기바꾸기바꾸기</p>
+    
+    <script>
+        ///////////클릭 글자 색상 바꾸기 3가지 방법///////////////
+        // 방법1: 웹 요소를 변수로 지정 & 미리 만든 함수 사용
+        // let changeBt = document.querySelector("#change");
+        // changeBt.onclick = changeColor; //함수명만 불러옴 괄호()없다.
+
+        // function changeColor(){
+        //     document.querySelector("p").style.color = "blue";
+        // }
+
+        //방법2: 웹 요소를 따로 변수로 만들지 않고 사용
+        document.querySelector("#change").onclick = changeColor;
+        function changeColor(){
+            document.querySelector("p").style.color = "purple";
+        }
+
+        //방법3: 함수를 직접 선언
+        // document.querySelector("#change").onclick = function(){
+        //     document.querySelector("p").style.color = 'orange';
+        // }
+
+    </script>
+</body>
+</html>

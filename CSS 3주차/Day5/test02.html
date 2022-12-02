@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="js"> 자바스크립트 눌러보세요</h2>
+
+    <script>
+        //변수에 대해서 
+        //정수, 실수를 구별하지 않는다. 정확한 계산 어렵다.
+            var num = 10; //숫자
+            var str = '자바스크립트'; //문자열
+            var temp = true; //boolean
+            document.write(`${num} <br> ${str} <br> ${temp}`);
+            //br같은 태그들을 문자로 ''표현합니다.
+            var test1 = '안녕하세요';
+            var test2 = '또 만났네요';
+            document.write(`<br><br>${test1} <br> ${test2}`);
+
+            //var의 단점은
+            //이렇게 덮어씁니다. let은 덮어쓸 수 없으며
+            //블록{}에서도 차이점이 있습니다. 전역변수와 지역변수
+            var test1 = '솥뚜껑';
+            document.write(`<br> ${test1}`); 
+
+            let test3 = 300;
+            //let test3 = 400; let은 중복 선언시 오류 발생! 에러 확인.
+            document.write(`<br>${test3}`);
+
+            //지역local변수와 전역global변수
+            // var kor = 90;
+            // function getScore(){
+            //     kor = 100; //전역변수 (var없다)
+            //     console.log(kor); //100
+            // }
+            // getScore();
+            // console.log(kor); //100
+
+                //지역local변수
+            // var eng = 80;
+            // function getScore(){ //함수 선언!
+            //     var eng = 100; //지역 변수 var로 선언함
+            //     //{}블록 밖에서 사용할 수 없다.
+            //     console.log(eng); //100
+            // }
+            // getScore(); //함수 실행!
+            // console.log(eng); //80
+                // function getScore(){
+                //     var math = 88;
+                //     console.log(math);
+                // }
+                // getScore();
+              // console.log(math); 에러 지역변수
+              //블록{}에 의해 변수의 범위가 달라지는 것을 변수의 scope 이라고 한다.
+
+              //함수 레벨 스코프function level scope와
+
+              //블록 레벨 스코프 block level scope
+
+                  // var 변수를 중복해서 선언할 수 있다.
+                  //     함수 블록{}내에서만 지역 변수가 존재
+                  
+                  // let var와 같지만 같은 블록{}에서는 이미 선언한 변수를 중복해서 선언 할 수 없다.
+                  // 블록{},제어문 블록{}에서도 지역 변수가 존재
+
+                  // const 같은 블록{}에서는 이미 선언한 변수를 중복해서 선언 할 수 없고,
+                  // 저장된 값을 변경할수 없다.
+                  // 블록{},제어문 블록{}에서도 지역 변수가 존재
+
+              var numS = 33;
+              {
+                var numS = 44;  //numS는 var전역 변수 (함수아님)
+                console.log(numS); //44
+              }
+              console.log(numS); //44
+
+              let numSc = 33;
+              {
+                let numSc = 44;  //numSc는 let전역 변수 (함수아님)
+                console.log(numSc); //44
+              }
+              console.log(numSc); //33
+
+              const numSco = 33;
+              {
+                const numSco = 44;  // numSco는 const지역 변수
+                console.log(numSco); //44
+              }
+              console.log(numSco); //33
+              ////////////////////////////////////////////////////////////
+    </script>
+</body>
+</html>

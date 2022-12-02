@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(48, 48, 48);
+        }
+        img{
+            width: 200px;
+            height: auto;
+            margin: 100px auto;
+        }
+        .flower{
+            display: flex;
+            flex-direction: column;
+        }
+        .display{
+            display: none;
+        }
+        button{
+            position: relative;
+            top: 30px;
+        }
+        .complete{
+            text-align: center;
+            width: 700px;
+            height: 700px;
+            margin: 100px auto;
+            background-image: url(../images/연속\ 꽃.png);
+            background-repeat: no-repeat;
+            color: white;
+            font-size: 30px;
+        }
+        #grow{
+            height: 300px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flower">
+        <img src="../images/꽃1.PNG" id="img1" alt="">
+        <img src="../images/꽃2.PNG" id="img2" class="display" alt="">
+        <img src="../images/꽃3.PNG" id="img3" class="display" alt="">
+        <img src="../images/꽃4.PNG" id="img4" class="display" alt="">
+        <img src="../images/꽃5.PNG" id="img5" class="display" alt="">
+        <img src="../images/꽃6.PNG" id="img6" class="display" alt="">
+        <div id="img7" class="display complete">꽃 키워온 과정</div>
+        <button id="grow" onclick="growup()">꽃 키우기</button>
+    </div>
+   
+    <script>
+        let num =1;
+        function growup(){
+           
+            if(num==1){
+                document.getElementById('img1').style.display = "none";
+                document.getElementById('img2').style.display = "block";
+                document.getElementById('img7').style.display = "none";
+                num++;
+            }
+            else if(num==2){
+                document.getElementById('img2').style.display = "none";
+                document.getElementById('img3').style.display = "block";
+                num++;
+            }
+            else if(num==3){
+                document.getElementById('img3').style.display = "none";
+                document.getElementById('img4').style.display = "block";
+                num++;
+            }
+            else if(num==4){
+                document.getElementById('img4').style.display = "none";
+                document.getElementById('img5').style.display = "block";
+                num++;
+            }
+            else if(num==5){
+                document.getElementById('img5').style.display = "none";
+                document.getElementById('img6').style.display = "block";
+                num++;
+            }
+            else if(num==6){
+                document.getElementById('img6').style.display = "none";
+                document.getElementById('img7').style.display = "block";
+                num = 1;
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>

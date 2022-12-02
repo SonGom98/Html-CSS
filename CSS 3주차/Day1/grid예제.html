@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid예제</title>
+    <style>
+        #wrapper{
+           margin: 0 auto;
+            width: 700px;
+            display: grid;
+            border: 1px solid black;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 200px);
+            grid-gap: 1em; /*그리드 각각의 여백*/
+            grid-template-areas: 
+            "box1 box1 box2"
+            "box4 box3 box2"
+            "box4 box3 box7"
+            "box5 box3 box7"
+            "box5 box6 box6"
+            ;
+        }
+        .box1{
+          background-image: url(../images/그림1.jpg);
+          background-repeat: no-repeat;
+        background-size: cover;
+            grid-area: box1;
+        }
+        .box2{
+            background-image: url(../images/그림2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: box2;
+        }
+        .box3{
+            background-image: url(../images/그림3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: box3;
+        }
+        .box4{
+            background-image: url(../images/그림4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: box4;
+        }
+        .box5{
+            background-image: url(../images/그림5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: box5;
+        }
+        .box6{
+            background-image: url(../images/그림6.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: box6;
+        }
+        .box7{
+            background-image: url(../images/그림7.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: box7;
+        }
+        .box8{
+            background-image: url(../images/그림8.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: box8;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+
+    </div>
+</body>
+</html>

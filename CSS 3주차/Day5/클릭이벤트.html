@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            display: inline;
+            border: dotted 1px black;
+            padding: 0 20px;
+           
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #result{
+            border: solid 1px black;
+            border-radius: 20px;
+            width: 200px;
+            height: 150px;
+            position: relative;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <!-- 
+        <li><a href="#" onclick="alert('버튼을 클릭했습니다.')">Green</a></li>
+        <li><a href="#" onclick="alert('버튼을 클릭했습니다.')">Orange</a></li>
+        <li><a href="#" onclick="alert('버튼을 클릭했습니다.')">Purple</a></li>
+         -->
+   
+        <li><a href="#" onclick="changeBg('green')">Green</a></li>
+        <li><a href="#" onclick="changeBg('orange')">Orange</a></li>
+        <li><a href="#" onclick="changeBg('purple')">Purple</a></li>
+    </ul>
+    <div id="result"></div>
+
+
+    <script>
+        function changeBg(color){
+            let result = document.querySelector('#result');
+            result.style.backgroundColor = color;
+        }
+
+    </script>
+</body>
+</html>
