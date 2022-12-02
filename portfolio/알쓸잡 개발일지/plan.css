@@ -1,0 +1,122 @@
+* {
+    text-align: center;
+}
+
+.나라 {
+    width: 150px;
+
+    font-weight: bold;
+    outline: none;
+
+}
+
+.박일 {
+    width: 14px;
+    font-weight: bold;
+
+    outline: none;
+
+
+}
+
+tr td {
+    border: 1px solid black;
+}
+
+.main1div {
+    width: 100%;
+    margin: 0 0;
+
+}
+
+table {
+    margin: 0 auto;
+    border-spacing: 0px;
+}
+
+.title {
+    text-align: center;
+    border: solid 1px black;
+    background-color: rgb(255, 255, 131);
+    width: 20%;
+    height: 20px;
+}
+
+.title2 {
+    background-color: rgb(255, 255, 131);
+    border: solid 1px balck;
+
+}
+
+.write1 {
+    width: 93%;
+    margin: 5px 3px 1px;
+    border: none;
+    resize: none;
+    outline: none;
+    max-lines: initial;
+}
+
+.write2 {
+    width: 97%;
+    margin: 5px 3px 1px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.write3 {
+    width: 80%;
+    margin: 5px -1px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.write4 {
+    width: 98%;
+    margin: 5px -1px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.write5 {
+    width: 92%;
+    margin: 5px -1px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.write6 {
+    width: 94%;
+    margin: 5px -1px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.write7 {
+    width: 92%;
+    margin: 5px -1px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.firtd {
+    margin: auto;
+    width: 600px;
+    background-color: rgb(255, 255, 131);
+}
+
+.last {
+
+    background-color: rgb(255, 255, 131);
+}
+
+.lasttb {
+    margin: auto;
+    width: 604px;
+}
